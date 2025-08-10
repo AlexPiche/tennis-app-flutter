@@ -2,7 +2,7 @@
   "buildCommand": "export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter build web",
   "devCommand": "export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter run -d web-server --web-hostname 0.0.0.0 --web-port 3000",
   "outputDirectory": "build/web",
-  "installCommand": "if [ ! -d \"flutter\" ]; then git clone https://github.com/flutter/flutter.git -b stable --depth 1; fi && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter doctor && flutter pub get",
+  "installCommand": "if [ ! -d \"flutter\" ]; then git clone https://github.com/flutter/flutter.git -b stable --depth 1; fi && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter doctor --disable-version-check && flutter pub get",
   "routes": [
     {
       "src": "/(.*)",
